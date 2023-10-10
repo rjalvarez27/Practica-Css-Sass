@@ -7,30 +7,29 @@
 }
 
 nav {
-  display: flex;
-  position: relative;
+  display: inline-flex;
+  position: static;
   width: 100%;
   height: 65px;
-  background-color: black;
-  z-index: 1;
+  background-color: rgb(21, 22, 23);
+  z-index: 2;
 }
 nav .nav-left {
   margin: 5px 5px 5px 10px;
-  width: 250px;
+  width: 240px;
 }
 nav .nav-left img {
   border: 1px solid black;
-  width: 120px;
-  height: 56px;
+  object-fit: cover;
+  height: 55px;
 }
 nav .nav-mid {
   display: flex;
   position: relative;
-  margin: 0 15px;
-  width: 57vw;
-  height: 43px;
+  margin: 0 10px;
+  width: 58vw;
+  height: 45px;
   top: 10px;
-  border: 1px solid rgb(100, 109, 120);
   border-radius: 5px;
 }
 nav .nav-mid select {
@@ -40,17 +39,18 @@ nav .nav-mid select {
   padding: 5px;
   font-weight: 800;
   border: none;
-}
-nav .nav-mid select .one {
-  background: rgb(225, 225, 226);
+  background: rgba(224, 220, 220, 0.996);
+  color: rgb(146, 152, 160);
+  font-size: 12px;
 }
 nav .nav-mid input {
   position: relative;
   width: 885px;
   height: 43px;
   padding: 10px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 800;
+  color: rgb(146, 152, 160);
   border: none;
   border-left: 0.5px solid rgb(146, 152, 160);
 }
@@ -64,14 +64,23 @@ nav .nav-mid button {
 }
 nav .nav-right {
   display: flex;
-  flex-direction: row;
+  position: relative;
+  width: 23vw;
   margin: 5px 5px 5px 5px;
-  gap: 10px;
 }
 nav .nav-right .dropdown {
-  float: right;
   position: relative;
   display: inline-block;
+}
+nav .nav-right .dropbtn1 {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  width: 58px;
+  height: 56px;
 }
 nav .nav-right .dropbtn {
   background-color: black;
@@ -87,11 +96,27 @@ nav .nav-right .dropdown-content {
   display: none;
   position: absolute;
   left: 0;
-  width: 280px;
-  height: 480px;
+  width: 260px;
+  height: 460px;
   background-color: white;
   border: 1px solid rgb(197, 199, 202);
   z-index: 1;
+}
+nav .nav-right .dropdown-content p {
+  font-size: 14px;
+  color: black;
+  margin: 10px;
+  cursor: default;
+}
+nav .nav-right .dropdown-content p span {
+  color: #71c4fc;
+  font-size: 12px;
+  margin-left: 12px;
+}
+nav .nav-right .dropdown-content p span:hover {
+  color: #fd9607;
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
 }
 nav .nav-right .dropdown-content input {
   accent-color: #fd9607;
@@ -102,27 +127,27 @@ nav .nav-right .dropdown-content a {
   display: flex;
   gap: 10px;
   margin: 10px;
-}
-nav .nav-right .dropdown-content a p {
-  color: #51cecc;
-  font-size: 11px;
-  margin-top: 4px;
+  cursor: pointer;
 }
 nav .nav-right .dropdown-content a:hover {
-  color: rgba(250, 143, 4, 0.993);
   text-decoration: underline;
   text-decoration-color: rgba(250, 143, 4, 0.993);
 }
-nav .nav-right .dropdown-content span {
-  color: #51cecc;
-  font-size: 14px;
-  margin-left: 200px;
-}
 nav .nav-right .dropdown-content .ligt {
-  font-weight: 300;
+  position: relative;
+  color: #71c4fc;
+  font-size: 12px;
+  left: 200px;
+  top: -15px;
+}
+nav .nav-right .dropdown-content .ligt:hover {
+  color: #fd9607;
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
+  cursor: pointer;
 }
 nav .nav-right .dropdown-content .fnl {
-  color: #51cecc;
+  color: #2376c9;
   margin: 10px 0 10px 60px;
 }
 nav .nav-right .dropdown-content2 {
@@ -133,6 +158,7 @@ nav .nav-right .dropdown-content2 {
   height: 480px;
   background-color: white;
   border: 1px solid rgb(197, 199, 202);
+  z-index: 2;
 }
 nav .nav-right .dropdown-content2 .one {
   display: grid;
@@ -141,20 +167,30 @@ nav .nav-right .dropdown-content2 .one {
 }
 nav .nav-right .dropdown-content2 .one button {
   margin: 15px 0 5px 0;
-  width: 240px;
+  width: 235px;
   height: 40px;
   background-color: #FFD814;
   border-radius: 5px;
   border: none;
   font-weight: 600;
 }
-nav .nav-right .dropdown-content2 .one a {
+nav .nav-right .dropdown-content2 .one button:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
+}
+nav .nav-right .dropdown-content2 .one p {
   font-size: 12px;
   text-align: center;
   color: black;
 }
-nav .nav-right .dropdown-content2 .one a span {
+nav .nav-right .dropdown-content2 .one p span {
   color: #1c85e7;
+  cursor: pointer;
+}
+nav .nav-right .dropdown-content2 .one p span:hover {
+  color: rgba(250, 143, 4, 0.993);
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
 }
 nav .nav-right .dropdown-content2 .two {
   display: flex;
@@ -177,7 +213,7 @@ nav .nav-right .dropdown-content2 a:hover {
 nav .nav-right img {
   border: 1px solid black;
   width: 100px;
-  height: 56px;
+  height: 54px;
 }
 
 nav .nav-left img:hover {
@@ -219,7 +255,7 @@ nav .nav-right button:hover {
 }
 
 .subnav {
-  position: relative;
+  position: static;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -234,12 +270,12 @@ nav .nav-right button:hover {
   padding: 14px;
   height: 45px;
 }
-.subnav i {
-  font-size: 16px;
-}
 .subnav label:hover {
   border: 1px solid white;
   cursor: pointer;
+}
+.subnav i {
+  font-size: 16px;
 }
 .subnav a {
   color: white;
@@ -290,6 +326,9 @@ nav .nav-right button:hover {
   text-decoration: none;
   color: white;
   margin-left: 35px;
+}
+.container-menu .login i {
+  font-size: 25px;
 }
 
 #btn-menu:checked ~ .container-menu {
@@ -355,30 +394,27 @@ nav .nav-right button:hover {
 }
 
 .all {
-  display: inline-block;
-  height: 270vh;
-  background: rgb(225, 225, 226);
+  border: 1px solid blue;
+  height: 2100px;
+  background-color: rgb(227, 227, 227);
 }
 
-.img-scroll {
-  position: absolute;
-  left: 40px;
-}
-.img-scroll img {
+section {
+  background-image: linear-gradient(to top, #e3e6e6, transparent), url("https://m.media-amazon.com/images/I/71wF9F80B+L._SX3000_.jpg");
+  background-size: 100% 32%, contain;
+  background-repeat: no-repeat;
+  background-position-x: -25px;
   display: flex;
-  width: 94vw;
-  height: 600px;
+  position: relative;
+  border: 1px solid green;
+  height: 280vh;
 }
-.img-scroll img:before {
-  background: white;
-}
-
 section .categories {
-  display: inline-block;
+  display: inline-table;
   position: relative;
   width: 96%;
-  top: 30vh;
-  left: 55px;
+  top: 260px;
+  left: 60px;
 }
 section .box {
   display: inline-block;
@@ -396,14 +432,14 @@ section h2 {
 }
 section img {
   display: inline-block;
-  width: 360px;
-  height: 330px;
+  width: 325px;
+  height: 300px;
   padding: 10px 0 5px 30px;
 }
 section a {
   color: black;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   padding: 15px 0 5px 30px;
 }
 section a:hover {
@@ -429,7 +465,6 @@ section a:hover {
   position: relative;
   width: 100%;
   height: 150px;
-  top: 45px;
   left: 0;
   right: 0;
   gap: 10px;
@@ -478,6 +513,7 @@ section a:hover {
 .fotr1 {
   background-color: #24303f;
   display: flex;
+  position: relative;
   width: 100%;
   height: 55vh;
   justify-content: center;
@@ -504,6 +540,7 @@ section a:hover {
 
 .fotr2 {
   display: flex;
+  position: relative;
   background-color: #24303f;
   border: 1px solid rgb(55, 71, 90);
   width: 100%;
@@ -541,7 +578,7 @@ section a:hover {
 .fotr2 .dropdown .dropdown-content3 {
   display: none;
   position: absolute;
-  left: 690px;
+  left: 600px;
   width: 280px;
   height: 290px;
   background-color: white;
