@@ -1,0 +1,651 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background-color: black;
+  z-index: 1;
+}
+nav .nav-left {
+  margin: 5px 5px 5px 10px;
+  width: 250px;
+}
+nav .nav-left img {
+  border: 1px solid black;
+  width: 120px;
+  height: 56px;
+}
+nav .nav-mid {
+  display: flex;
+  position: relative;
+  margin: 0 15px;
+  width: 57vw;
+  height: 43px;
+  top: 10px;
+  border: 1px solid rgb(100, 109, 120);
+  border-radius: 5px;
+}
+nav .nav-mid select {
+  width: 70px;
+  height: 43px;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+  font-weight: 800;
+  border: none;
+}
+nav .nav-mid select .one {
+  background: rgb(225, 225, 226);
+}
+nav .nav-mid input {
+  position: relative;
+  width: 885px;
+  height: 43px;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  border: none;
+  border-left: 0.5px solid rgb(146, 152, 160);
+}
+nav .nav-mid button {
+  width: 55px;
+  height: 43px;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  background: rgba(241, 169, 35, 0.993);
+  border: none;
+}
+nav .nav-right {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 5px 5px 5px;
+  gap: 10px;
+}
+nav .nav-right .dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+nav .nav-right .dropbtn {
+  background-color: black;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  width: 95px;
+  height: 56px;
+}
+nav .nav-right .dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 280px;
+  height: 480px;
+  background-color: white;
+  border: 1px solid rgb(197, 199, 202);
+  z-index: 1;
+}
+nav .nav-right .dropdown-content input {
+  accent-color: #fd9607;
+}
+nav .nav-right .dropdown-content a {
+  font-size: 14px;
+  color: black;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+nav .nav-right .dropdown-content a p {
+  color: #51cecc;
+  font-size: 11px;
+  margin-top: 4px;
+}
+nav .nav-right .dropdown-content a:hover {
+  color: rgba(250, 143, 4, 0.993);
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
+}
+nav .nav-right .dropdown-content span {
+  color: #51cecc;
+  font-size: 14px;
+  margin-left: 200px;
+}
+nav .nav-right .dropdown-content .ligt {
+  font-weight: 300;
+}
+nav .nav-right .dropdown-content .fnl {
+  color: #51cecc;
+  margin: 10px 0 10px 60px;
+}
+nav .nav-right .dropdown-content2 {
+  display: none;
+  position: absolute;
+  right: -150px;
+  width: 460px;
+  height: 480px;
+  background-color: white;
+  border: 1px solid rgb(197, 199, 202);
+}
+nav .nav-right .dropdown-content2 .one {
+  display: grid;
+  font-size: 14px;
+  justify-content: center;
+}
+nav .nav-right .dropdown-content2 .one button {
+  margin: 15px 0 5px 0;
+  width: 240px;
+  height: 40px;
+  background-color: #FFD814;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+nav .nav-right .dropdown-content2 .one a {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+}
+nav .nav-right .dropdown-content2 .one a span {
+  color: #1c85e7;
+}
+nav .nav-right .dropdown-content2 .two {
+  display: flex;
+  margin: 15px 10px 10px;
+  font-size: 14px;
+}
+nav .nav-right .dropdown-content2 .two a {
+  display: grid;
+  color: black;
+  margin: 10px 10px 0 10px;
+}
+nav .nav-right .dropdown-content2 .two h4 {
+  margin: 10px;
+}
+nav .nav-right .dropdown-content2 a:hover {
+  color: rgba(250, 143, 4, 0.993);
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
+}
+nav .nav-right img {
+  border: 1px solid black;
+  width: 100px;
+  height: 56px;
+}
+
+nav .nav-left img:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+nav .nav-mid select:hover {
+  border: 1px solid rgba(250, 143, 4, 0.993);
+  background-color: rgb(205, 208, 213);
+  cursor: pointer;
+}
+
+nav .nav-mid button:hover {
+  background-color: rgba(250, 143, 4, 0.993);
+  cursor: pointer;
+}
+
+nav .nav-mid input:hover {
+  border: 1px solid rgba(250, 143, 4, 0.993);
+}
+
+nav .nav-right .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav .nav-right .dropdown:hover .dropdown-content2 {
+  display: block;
+}
+
+nav .nav-right img:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+nav .nav-right button:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.subnav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(35, 47, 62);
+  color: white;
+}
+.subnav label {
+  border: 1px solid rgb(35, 47, 62);
+  justify-content: center;
+  padding: 14px;
+  height: 45px;
+}
+.subnav i {
+  font-size: 16px;
+}
+.subnav label:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.subnav a {
+  color: white;
+  padding: 14px;
+  height: 45px;
+  border: 1px solid rgb(35, 47, 62);
+}
+.subnav a:hover {
+  border: 1px solid white;
+  cursor: pointe;
+}
+
+.int {
+  display: none;
+}
+
+.lab {
+  color: white;
+  font-size: 23px;
+  margin: 15px 15px;
+  transition: all 200ms ease;
+  z-index: 3;
+}
+
+.container-menu {
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 200ms ease;
+  visibility: hidden;
+  z-index: 3;
+}
+.container-menu .login {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+  background: rgb(35, 47, 62);
+  font-size: 20px;
+  font-weight: 700;
+}
+.container-menu .login a {
+  text-decoration: none;
+  color: white;
+  margin-left: 35px;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  position: adsolute;
+  background: white;
+  width: 400px;
+  height: 100vh;
+  transition: all 200ms ease;
+  transform: translateX(-100%);
+}
+.cont-menu .cont {
+  overflow-y: scroll;
+  height: 93%;
+}
+.cont-menu .cont .final {
+  margin-bottom: 60px;
+}
+.cont-menu .cont a {
+  display: flex;
+  padding: 10px;
+  color: black;
+  margin: 10px 10px 10px 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.cont-menu .cont a i {
+  color: rgb(100, 109, 120);
+}
+.cont-menu .cont .move {
+  display: flex;
+  justify-content: space-between;
+}
+.cont-menu .cont h3 {
+  display: block;
+  padding: 10px;
+  margin: 5px 5px 5px 20px;
+  font-weight: bolder;
+}
+.cont-menu .cont p {
+  border-bottom: 0.2px solid rgb(181, 185, 190);
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+}
+
+.cont-menu .cont a:hover {
+  background-color: rgb(237, 237, 239);
+}
+.cont-menu .cont a:hover i {
+  color: black;
+}
+
+.cont-menu .cont {
+  transform: translateY(0.5%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.all {
+  display: inline-block;
+  height: 270vh;
+  background: rgb(225, 225, 226);
+}
+
+.img-scroll {
+  position: absolute;
+  left: 40px;
+}
+.img-scroll img {
+  display: flex;
+  width: 94vw;
+  height: 600px;
+}
+.img-scroll img:before {
+  background: white;
+}
+
+section .categories {
+  display: inline-block;
+  position: relative;
+  width: 96%;
+  top: 30vh;
+  left: 55px;
+}
+section .box {
+  display: inline-block;
+  background-color: white;
+  width: 22vw;
+  height: 56vh;
+  margin: 8px;
+}
+section h2 {
+  display: inline-block;
+  width: 22vw;
+  height: 8vh;
+  padding: 13px 0 5px 30px;
+  font-size: 22px;
+}
+section img {
+  display: inline-block;
+  width: 360px;
+  height: 330px;
+  padding: 10px 0 5px 30px;
+}
+section a {
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+  padding: 15px 0 5px 30px;
+}
+section a:hover {
+  color: rgba(250, 143, 4, 0.993);
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 143, 4, 0.993);
+}
+
+.box1 {
+  width: 100%;
+  height: 220px;
+  justify-content: center;
+  align-content: center;
+}
+
+.box-cont {
+  border: 1px solid rgb(197, 199, 202);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  top: 45px;
+  left: 0;
+  right: 0;
+  gap: 10px;
+  font-weight: 900;
+}
+.box-cont button {
+  width: 250px;
+  height: 40px;
+  background-color: #eac409;
+  border: 2px solid #f7d00c;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.box-cont p {
+  font-size: 13px;
+  color: black;
+}
+.box-cont p span {
+  color: rgb(35, 47, 62);
+  cursor: pointer;
+}
+.box-cont p span:hover {
+  color: rgba(250, 143, 4, 0.993);
+}
+
+.butt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 71, 90);
+}
+.butt button {
+  width: 98vw;
+  height: 55px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.butt button:hover {
+  background-color: rgb(64, 83, 107);
+}
+
+.fotr1 {
+  background-color: #24303f;
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  justify-content: center;
+}
+.fotr1 .c1 {
+  display: inline-block;
+  position: relative;
+  width: 280px;
+  color: white;
+  font-size: 15px;
+}
+.fotr1 .c1 h3 {
+  margin: 55px 20px 10px 20px;
+}
+.fotr1 .c1 a {
+  color: white;
+  display: flex;
+  margin: 10px 20px;
+}
+.fotr1 .c1 a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.fotr2 {
+  display: flex;
+  background-color: #24303f;
+  border: 1px solid rgb(55, 71, 90);
+  width: 100%;
+  height: 125px;
+  justify-content: center;
+  align-items: center;
+}
+.fotr2 img {
+  width: 125px;
+  height: 45px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.fotr2 button {
+  height: 35px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(184, 186, 187);
+  text-align: start;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 13px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.fotr2 .two {
+  width: 240px;
+}
+.fotr2 .three {
+  width: 170px;
+}
+.fotr2 .dropdown .one {
+  width: 135px;
+}
+.fotr2 .dropdown .dropdown-content3 {
+  display: none;
+  position: absolute;
+  left: 690px;
+  width: 280px;
+  height: 290px;
+  background-color: white;
+  border: 1px solid rgb(197, 199, 202);
+  z-index: 1;
+}
+.fotr2 .dropdown .dropdown-content3 input {
+  accent-color: #fd7a07;
+  cursor: pointer;
+}
+.fotr2 .dropdown .dropdown-content3 p {
+  font-size: 14px;
+  color: black;
+  margin: 10px;
+  cursor: default;
+}
+.fotr2 .dropdown .dropdown-content3 p span {
+  color: #2079bd;
+  font-size: 11px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.fotr2 .dropdown .dropdown-content3 p span:hover {
+  color: #fd7a07;
+}
+.fotr2 .dropdown .dropdown-content3 a {
+  font-size: 14px;
+  color: black;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+.fotr2 .dropdown .dropdown-content3 a:hover {
+  color: #fd7a07;
+  text-decoration: underline;
+  text-decoration-color: #fd7a07;
+}
+.fotr2 .dropdown:hover .dropdown-content3 {
+  display: block;
+}
+
+.fotr3 {
+  background-color: rgb(19, 26, 34);
+  color: white;
+  display: flex;
+  position: adsolute;
+  height: 55vh;
+  justify-content: center;
+  font-size: 12px;
+  gap: 20px;
+}
+.fotr3 h4 {
+  position: relative;
+  top: 35px;
+  margin: 0px 15px 0 15px;
+}
+.fotr3 h4:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  cursor: pointer;
+}
+.fotr3 p {
+  position: relative;
+  top: 35px;
+  margin: 0 15px 30px 15px;
+  color: rgb(153, 153, 153);
+}
+.fotr3 p:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(153, 153, 153);
+  cursor: pointer;
+}
+
+.fotr4 {
+  background-color: rgb(19, 26, 34);
+  color: white;
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+}
+.fotr4 .b1 {
+  display: flex;
+  gap: 10px;
+}
+.fotr4 p:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(153, 153, 153);
+  cursor: pointer;
+}
+.fotr4 img {
+  position: relative;
+  width: 40px;
+  left: -5px;
+}
+.fotr4 .b2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: -15px;
+}
+
+/*# sourceMappingURL=style.css.map */
