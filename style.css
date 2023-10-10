@@ -394,7 +394,6 @@ nav .nav-right button:hover {
 }
 
 .all {
-  border: 1px solid blue;
   height: 2100px;
   background-color: rgb(227, 227, 227);
 }
@@ -406,7 +405,6 @@ section {
   background-position-x: -25px;
   display: flex;
   position: relative;
-  border: 1px solid green;
   height: 280vh;
 }
 section .categories {
